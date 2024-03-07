@@ -1,0 +1,256 @@
+﻿  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  ChannelView.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ChannelView.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ChannelView.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ChannelView.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ChannelView.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/ChannelView.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/ChannelView.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ChannelView.cpp')
+  
+  CommSetupDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CommSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CommSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CommSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CommSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/CommSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/CommSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/CommSetupDlg.cpp')
+  
+  ECGSetupDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/ECGSetupDlg.cpp')
+  
+  LeakageTestDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/LeakageTestDlg.cpp')
+  
+  MainFrm.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/MainFrm.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/MainFrm.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/MainFrm.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/MainFrm.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/MainFrm.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/MainFrm.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/MainFrm.cpp')
+  
+  monitor.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\monitor.cpp(57,28): warning C4996: 'GetVersionExA': was declared deprecated
+  (compiling source file '/monitor.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\monitor.cpp(92,5): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+  (compiling source file '/monitor.cpp')
+  
+  monitorDoc.cpp
+  monitorView.cpp
+  NIBPAdjustDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPAdjustDlg.cpp')
+  
+  NIBPSetupDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/NIBPSetupDlg.cpp')
+  
+  Splitter.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/Splitter.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/Splitter.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/Splitter.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/Splitter.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/Splitter.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/Splitter.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/Splitter.cpp')
+  
+  StaticPressDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/StaticPressDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/StaticPressDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/StaticPressDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/StaticPressDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/StaticPressDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/StaticPressDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/StaticPressDlg.cpp')
+  
+  TEMPAdjustDlg.cpp
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(335,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(348,9): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(530,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(529,9): warning C4996: 'ltoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _ltoa. See online help for details.
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,38): warning C4477: '_snprintf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 4 has type 'volatile HANDLE'
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\CnComm.h(655,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '/TEMPAdjustDlg.cpp')
+  
+  VersionDlg.cpp
+  ViewBar.cpp
+  Generating Code...
+  monitor.vcxproj -> C:\Users\ASUS\Downloads\09--PM6750\Demo Source\Windows\monitor-HYS-2010\Release\monitor-HYS.exe

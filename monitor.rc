@@ -1,0 +1,1369 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\monitor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMM_SETUP DIALOG DISCARDABLE  0, 0, 155, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "串口设置"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,59,70,37,14
+    PUSHBUTTON      "取消",IDCANCEL,112,69,37,14
+    RTEXT           "端口号",IDC_STATIC,8,11,24,8
+    COMBOBOX        IDC_PORT,33,9,37,129,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "波特率",IDC_STATIC,83,11,24,8
+    COMBOBOX        IDC_BAUDRATE,108,9,37,102,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "数据位",IDC_STATIC,8,29,24,8
+    COMBOBOX        IDC_DATABIT,33,27,37,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "校验位",IDC_STATIC,83,29,24,8
+    COMBOBOX        IDC_PARITYBIT,108,27,37,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "停止位",IDC_STATIC,8,47,24,8
+    COMBOBOX        IDC_STOPBIT,33,45,37,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "默认值",IDC_DEFAULT,6,70,37,14
+END
+
+IDD_ECG_SETUP DIALOG DISCARDABLE  0, 0, 134, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "心电设置"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,23,92,37,14
+    PUSHBUTTON      "取消",IDCANCEL,74,92,37,14
+    COMBOBOX        IDC_ECG_MODE,67,8,48,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "心电波形增益",IDC_STATIC,18,30,46,8
+    COMBOBOX        IDC_ECG_GAIN,67,28,48,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "心电滤波模式",IDC_STATIC,18,10,46,8
+    RTEXT           "呼吸波形增益",IDC_STATIC,18,50,46,8
+    COMBOBOX        IDC_RESP_GAIN,67,48,48,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "心电导联切换",IDC_STATIC,18,70,46,8
+    COMBOBOX        IDC_ECG_CMD,67,68,48,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_NIBP_SETUP DIALOG DISCARDABLE  0, 0, 142, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "血压设置"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,14,57,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,78,57,50,14
+    RTEXT           "测量模式",IDC_STATIC,21,13,33,8
+    COMBOBOX        IDC_MODE,56,11,60,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "预充气压力值",IDC_STATIC,8,35,46,8
+    CONTROL         "Spin1",IDC_SPIN_PRESET,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,107,33,9,12
+    CTEXT           "",IDC_PRESET,56,33,51,12,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "mmHg",IDC_STATIC,117,35,17,8
+END
+
+IDD_VIEWBAR DIALOGEX 0, 0, 197, 486
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    RTEXT           "心率",IDC_STATIC,15,15,17,8
+    CTEXT           "",IDC_HR,35,10,50,17,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_TRANSPARENT
+    RTEXT           "ST(mv)",IDC_STATIC,8,44,25,8
+    CTEXT           "",IDC_ST,35,40,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "血氧",IDC_STATIC,15,135,17,8
+    CTEXT           "",IDC_SPO2,35,130,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "脉率",IDC_STATIC,119,135,17,8
+    CTEXT           "",IDC_PR,139,130,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "呼吸率",IDC_STATIC,111,15,25,8
+    CTEXT           "",IDC_RESP,139,10,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "收缩压",IDC_STATIC,8,74,25,8
+    CTEXT           "",IDC_SYS,35,70,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "舒张压",IDC_STATIC,111,75,25,8
+    CTEXT           "",IDC_DIA,139,70,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "平均压",IDC_STATIC,8,104,25,8
+    CTEXT           "",IDC_MEAN,35,100,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "袖带压",IDC_STATIC,111,105,25,8
+    CTEXT           "",IDC_CUFF,139,100,50,17,SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "心电状态",IDC_STATIC,2,200,194,51
+    RTEXT           "导联状态",IDC_STATIC,5,213,33,8
+    CTEXT           "",IDC_ECG_LEAD_STATE,39,209,56,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    RTEXT           "滤波模式",IDC_STATIC,5,234,33,8
+    CTEXT           "",IDC_ECG_MODE,39,230,56,16,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "波形增益",IDC_STATIC,100,234,33,8
+    RTEXT           "信号强度",IDC_STATIC,101,213,33,8
+    CTEXT           "",IDC_ECG_SIGNAL,135,209,56,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    GROUPBOX        "血氧状态",IDC_STATIC,2,340,194,31
+    GROUPBOX        "血压状态",IDC_STATIC,2,270,194,51,WS_GROUP
+    RTEXT           "探头状态",IDC_STATIC,5,354,33,8
+    CTEXT           "",IDC_SPO2_STATE,39,350,151,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    RTEXT           "测量模式",IDC_STATIC,5,283,33,8
+    CTEXT           "",IDC_NIBP_MODE,39,279,151,16,SS_CENTERIMAGE | 
+                    WS_BORDER | NOT WS_GROUP
+    RTEXT           "测量状态",IDC_STATIC,5,304,33,8,NOT WS_GROUP
+    CTEXT           "",IDC_NIBP_STATE,39,300,151,16,SS_CENTERIMAGE | 
+                    WS_BORDER | NOT WS_GROUP
+    RTEXT           "体温1",IDC_STATIC,11,165,21,8
+    CTEXT           "",IDC_TEMP1,35,160,50,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "心律异常",IDC_STATIC,103,45,33,8
+    CTEXT           "",IDC_ARR,139,40,50,17,SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "体温状态",IDC_STATIC,2,390,194,31
+    RTEXT           "探头状态",IDC_STATIC,5,405,33,8
+    CTEXT           "",IDC_TEMP_STATE,39,401,151,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "",IDC_ECG_GAIN,135,230,56,16,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "体温2",IDC_STATIC,115,164,21,8
+    CTEXT           "",IDC_TEMP2,139,160,50,17,SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_STATIC_PRESS DIALOG DISCARDABLE  0, 0, 148, 39
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "静态压力校准"
+FONT 11, "宋体"
+BEGIN
+    RTEXT           "袖带压力",IDC_STATIC,16,15,33,8
+    CTEXT           "",IDC_CUFF_PRESS,51,13,55,13,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "mmHg",IDC_STATIC,109,15,22,8
+END
+
+IDD_NIBP_ADJUST DIALOG DISCARDABLE  0, 0, 147, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "血压参数校准"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "校准",ID_ADJUST,49,68,50,13,WS_GROUP
+    RTEXT           "实测压力",IDC_STATIC,17,15,33,8
+    CTEXT           "",IDC_REAL_PRESS,52,13,45,13,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "mmHg",IDC_STATIC,100,15,22,8
+    RTEXT           "压力偏差",IDC_STATIC,17,34,33,8
+    LTEXT           "mmHg",IDC_STATIC,109,34,22,8
+    CONTROL         "Spin1",IDC_SPIN_BIAS,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,97,32,9,12
+    CTEXT           "",IDC_BIAS_PRESS,52,32,45,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "( 压力偏差＝实测压力－校准压力 )",IDC_TIPS,13,50,121,8
+END
+
+IDD_TEMP_ADJUST DIALOG DISCARDABLE  0, 0, 200, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "体温参数校准"
+FONT 11, "宋体"
+BEGIN
+    RTEXT           "体温1偏差",IDC_STATIC,30,17,35,8
+    LTEXT           "℃",IDC_STATIC,123,17,9,8
+    RTEXT           "体温2偏差",IDC_STATIC,30,39,35,8
+    LTEXT           "℃",IDC_STATIC,123,39,9,8
+    CONTROL         "Spin1",IDC_SPIN_BIAS1,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,111,15,9,12
+    CTEXT           "",IDC_TEMP_BIAS1,66,15,45,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "( 体温1偏差＝体温1－校准温度 )",IDC_TIPS1,42,59,115,8
+    PUSHBUTTON      "校准",ID_ADJUST_TEMP1,136,15,40,12
+    PUSHBUTTON      "校准",ID_ADJUST_TEMP2,136,37,40,12
+    CONTROL         "Spin1",IDC_SPIN_BIAS2,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,111,37,9,12
+    CTEXT           "",IDC_TEMP_BIAS2,66,37,45,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "( 体温2偏差＝体温2－校准温度 )",IDC_TIPS2,42,76,115,8
+END
+
+IDD_VERSION DIALOG DISCARDABLE  0, 0, 134, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "版本信息"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,45,52,44,13,WS_GROUP
+    RTEXT           "软件版本号:",IDC_STATIC,19,13,43,8
+    LTEXT           "Vx.x",IDC_SW_VER,66,13,51,8
+    RTEXT           "硬件版本号:",IDC_STATIC,19,28,43,8
+    LTEXT           "Vx.x",IDC_HW_VER,66,28,51,8
+END
+
+IDD_LEAKAGE_TEST DIALOG DISCARDABLE  0, 0, 147, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "漏气检测"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "开始测量",ID_LEAKAGE_TEST,49,40,50,13,WS_GROUP
+    RTEXT           "预充气压力值",IDC_STATIC,17,18,46,8
+    LTEXT           "mmHg",IDC_STATIC,109,18,22,8
+    CONTROL         "Spin1",IDC_SPIN_LEAKAGE_PRESET,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,97,16,9,12
+    CTEXT           "",IDC_LEAKAGE_PRESET,64,16,33,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于本软件的说明"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HYS协议演示程序",IDC_STATIC,40,10,61,8,SS_NOPREFIX
+    LTEXT           "版权(C)：上海贝瑞电子科技有限公司",IDC_STATIC,40,25,133,
+                    8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "联系电话：021-58531958",IDC_STATIC,39,40,89,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SMALL_HEART         ICON    DISCARDABLE     "res\\SmallHeart.ico"
+IDI_BIG_HEART           ICON    DISCARDABLE     "res\\BigHeart.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ECG_SETUP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_NIBP_SETUP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_VIEWBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 195
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 484
+    END
+
+    IDD_STATIC_PRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+
+    IDD_NIBP_ADJUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_TEMP_ADJUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_VERSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_LEAKAGE_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  35, 16
+BEGIN
+    BUTTON      ID_COM_START
+    BUTTON      ID_COM_STOP
+    SEPARATOR
+    BUTTON      ID_ECG_START
+    BUTTON      ID_ECG_STOP
+    SEPARATOR
+    BUTTON      ID_NIBP_START
+    BUTTON      ID_NIBP_STOP
+    SEPARATOR
+    BUTTON      ID_SPO2_START
+    BUTTON      ID_SPO2_STOP
+    SEPARATOR
+    BUTTON      ID_TEMP_START
+    BUTTON      ID_TEMP_STOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "monitor MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "monitor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "monitor.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "monitor Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    MENUITEM "串口设置",                    IDM_COM_SETUP
+    MENUITEM "心电设置",                    IDM_ECG_SETUP
+    MENUITEM "血压设置",                    IDM_NIBP_SETUP
+    POPUP "校准设置"
+    BEGIN
+        MENUITEM "漏气检测",                    IDM_LEAKAGE_TEST
+        MENUITEM "静态压力校准",                IDM_STATIC_PRESS_ADJUST
+        MENUITEM "血压参数校准",                IDM_NIBP_ADJUST
+        MENUITEM "体温参数校准",                IDM_TEMP_ADJUST
+    END
+    MENUITEM "版本号读取",                  IDM_GET_VERSION
+    POPUP "显示切换"
+    BEGIN
+        MENUITEM "显示工具栏",                  IDM_TOOLBAR
+        MENUITEM "显示侧边栏",                  IDM_VIEWBAR
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMM_SETUP DLGINIT
+BEGIN
+    IDC_PARITYBIT, 0x403, 7, 0
+0xdece, 0xa3d0, 0xe9d1, "\000" 
+    IDC_PARITYBIT, 0x403, 7, 0
+0xe6c6, 0xa3d0, 0xe9d1, "\000" 
+    IDC_PARITYBIT, 0x403, 7, 0
+0xbcc5, 0xa3d0, 0xe9d1, "\000" 
+    0
+END
+
+IDD_ECG_SETUP DLGINIT
+BEGIN
+    IDC_ECG_MODE, 0x403, 9, 0
+0xd6ca, 0xf5ca, 0xa3c4, 0xbdca, "\000" 
+    IDC_ECG_MODE, 0x403, 9, 0
+0xe0bc, 0xa4bb, 0xa3c4, 0xbdca, "\000" 
+    IDC_ECG_MODE, 0x403, 9, 0
+0xefd5, 0xcfb6, 0xa3c4, 0xbdca, "\000" 
+    IDC_ECG_CMD, 0x403, 7, 0
+0xb533, 0xc1bc, 0x49aa, "\000" 
+    IDC_ECG_CMD, 0x403, 8, 0
+0xb533, 0xc1bc, 0x49aa, 0x0049, 
+    IDC_ECG_CMD, 0x403, 9, 0
+0xb533, 0xc1bc, 0x49aa, 0x4949, "\000" 
+    IDC_ECG_CMD, 0x403, 6, 0
+0xb535, 0xc1bc, 0x00aa, 
+    0
+END
+
+IDD_NIBP_SETUP DLGINIT
+BEGIN
+    IDC_MODE, 0x403, 9, 0
+0xc9b3, 0xcbc8, 0xa3c4, 0xbdca, "\000" 
+    IDC_MODE, 0x403, 9, 0
+0xf9b6, 0xafcd, 0xa3c4, 0xbdca, "\000" 
+    IDC_MODE, 0x403, 11, 0
+0xc2d0, 0xfac9, 0xf9b6, 0xa3c4, 0xbdca, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "monitor\n\nMonito\n\n\nMonitor.Document\nMonito Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "monitor-HYS"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n版本信息"
+    ID_APP_EXIT             "退出应用程序\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    IDS_STR_1               "HYS协议演示程序"
+    IDS_STR_2               "串口操作"
+    IDS_STR_3               "打开失败, 请检查串口是否连接.\n"
+    IDS_STR_4               "正常"
+    IDS_STR_5               "脱落"
+    IDS_STR_6               "手术模式"
+    IDS_STR_7               "监护模式"
+    IDS_STR_8               "诊断模式"
+    IDS_STR_9               "信号太弱"
+    IDS_STR_10              "正在分析"
+    IDS_STR_11              "停搏"
+    IDS_STR_12              "室颤/室速"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NIBP_START           "\nNIBP Start"
+    ID_NIBP_STOP            "\nNIBP Stop"
+    IDM_COM_SETUP           "串口设置"
+    IDM_ECG_SETUP           "心电设置"
+    IDM_NIBP_SETUP          "血压设置"
+    ID_ECG_START            "\nECG Start"
+    ID_ECG_STOP             "\nECG Stop"
+    ID_SPO2_START           "\nSPO2 Start"
+    ID_SPO2_STOP            "\nSPO2 Stop"
+    ID_TEMP_START           "\nTEMP Start"
+    ID_TEMP_STOP            "\nTEMP Stop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_TOOLBAR             "切换工具栏显示状态"
+    IDM_VIEWBAR             "切换侧边栏显示状态"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COM_START            "\nCOM Start"
+    ID_COM_STOP             "\nCOM Stop"
+    IDM_NIBP_ADJUST         "血压偏差校准"
+    IDM_TEMP_ADJUST         "体温偏差校准"
+    IDM_STATIC_PRESS_ADJUST "静态压力校准"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LEAKAGE_TEST        "血压漏气检测"
+    IDM_GET_VERSION         "\n获取设备的软硬件版本信息"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_13              "R ON T"
+    IDS_STR_14              "多个室早"
+    IDS_STR_15              "成对室早"
+    IDS_STR_16              "单个室早"
+    IDS_STR_17              "二联律"
+    IDS_STR_18              "三联律"
+    IDS_STR_19              "心动过速"
+    IDS_STR_20              "心动过缓"
+    IDS_STR_21              "漏搏"
+    IDS_STR_22              "成人模式"
+    IDS_STR_23              "儿童模式"
+    IDS_STR_24              "新生儿模式"
+    IDS_STR_25              "测量完成"
+    IDS_STR_26              "正在测量"
+    IDS_STR_27              "测量终止"
+    IDS_STR_28              "过压保护"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_29              "袖带太松或未接"
+    IDS_STR_30              "测量时间过长"
+    IDS_STR_31              "测量出错"
+    IDS_STR_32              "测量中有干扰"
+    IDS_STR_33              "测量超出范围"
+    IDS_STR_34              "正在初始化"
+    IDS_STR_35              "初始化完成"
+    IDS_STR_36              "血氧探头脱落"
+    IDS_STR_37              "血氧指夹空"
+    IDS_STR_38              "正在搜索脉搏"
+    IDS_STR_39              "脉搏搜索时间过长"
+    IDS_STR_40              "体温1探头脱落"
+    IDS_STR_41              "体温2探头脱落"
+    IDS_STR_42              "体温1、2探头均脱落"
+    IDS_STR_43              "正常"
+    IDS_STR_44              "开始检测"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_45              "停止检测"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HYS Protocol Demo Program",IDC_STATIC,40,10,101,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright(C):Shanghai Berry Inc., China",IDC_STATIC,40,
+                    25,157,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Tel: +86-21-58531958",IDC_STATIC,39,40,81,8
+END
+
+IDD_COMM_SETUP DIALOG DISCARDABLE  0, 0, 155, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Serial Port Setup"
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,59,70,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,69,37,14
+    RTEXT           "Port",IDC_STATIC,14,11,17,8
+    COMBOBOX        IDC_PORT,33,9,37,129,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Baud",IDC_STATIC,89,11,17,8
+    COMBOBOX        IDC_BAUDRATE,108,9,37,102,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Data",IDC_STATIC,14,29,17,8
+    COMBOBOX        IDC_DATABIT,33,27,37,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Parity",IDC_STATIC,81,29,25,8
+    COMBOBOX        IDC_PARITYBIT,108,27,37,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Stop",IDC_STATIC,14,47,17,8
+    COMBOBOX        IDC_STOPBIT,33,45,37,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Default",IDC_DEFAULT,6,70,37,14
+END
+
+IDD_ECG_SETUP DIALOG DISCARDABLE  0, 0, 134, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ECG Setup"
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,23,92,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,92,37,14
+    COMBOBOX        IDC_ECG_MODE,63,8,48,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "ECG Gain",IDC_STATIC,27,30,33,8
+    COMBOBOX        IDC_ECG_GAIN,63,28,48,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "ECG Mode",IDC_STATIC,27,10,33,8
+    RTEXT           "RESP Gain",IDC_STATIC,23,50,37,8
+    COMBOBOX        IDC_RESP_GAIN,63,48,48,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Lead Mode",IDC_STATIC,23,70,37,8
+    COMBOBOX        IDC_ECG_CMD,63,68,48,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_LEAKAGE_TEST DIALOG DISCARDABLE  0, 0, 147, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Leakage Check"
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Start",ID_LEAKAGE_TEST,49,40,50,13,WS_GROUP
+    RTEXT           "Preset Press",IDC_STATIC,14,18,49,8
+    LTEXT           "mmHg",IDC_STATIC,110,18,22,8
+    CONTROL         "Spin1",IDC_SPIN_LEAKAGE_PRESET,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,98,16,9,12
+    CTEXT           "",IDC_LEAKAGE_PRESET,65,16,33,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_NIBP_ADJUST DIALOG DISCARDABLE  0, 0, 195, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NIBP BIAS ADJUST"
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Adjust",ID_ADJUST,72,69,50,13,WS_GROUP
+    RTEXT           "Real Press",IDC_STATIC,37,15,41,8
+    CTEXT           "",IDC_REAL_PRESS,80,13,45,13,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "mmHg",IDC_STATIC,127,15,22,8
+    RTEXT           "Bias Press",IDC_STATIC,37,34,41,8
+    LTEXT           "mmHg",IDC_STATIC,136,34,22,8
+    CONTROL         "Spin1",IDC_SPIN_BIAS,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,125,32,9,12
+    CTEXT           "",IDC_BIAS_PRESS,80,32,45,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "( Bias Press = Real Press - Adjust Press )",IDC_TIPS,13,
+                    51,169,8
+END
+
+IDD_NIBP_SETUP DIALOG DISCARDABLE  0, 0, 142, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NIBP Setup"
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,14,57,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,78,57,50,14
+    RTEXT           "Patient Mode",IDC_STATIC,10,13,49,8
+    COMBOBOX        IDC_MODE,61,11,42,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Preset Press",IDC_STATIC,10,35,49,8
+    CONTROL         "Spin1",IDC_SPIN_PRESET,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,103,33,9,12
+    CTEXT           "",IDC_PRESET,61,33,42,12,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "mmHg",IDC_STATIC,115,35,17,8
+END
+
+IDD_STATIC_PRESS DIALOG DISCARDABLE  0, 0, 148, 39
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "STATIC PRESSURE CALIBRATE"
+FONT 11, "MS Sans Serif"
+BEGIN
+    RTEXT           "Cuff Press",IDC_STATIC,15,15,41,8
+    CTEXT           "",IDC_CUFF_PRESS,58,13,55,13,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "mmHg",IDC_STATIC,116,15,17,8
+END
+
+IDD_TEMP_ADJUST DIALOG DISCARDABLE  0, 0, 200, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TEMP BIAS ADJUST"
+FONT 11, "MS Sans Serif"
+BEGIN
+    RTEXT           "TEMP1 Bias",IDC_STATIC,23,17,41,8
+    LTEXT           "C",IDC_STATIC,124,17,8,8
+    RTEXT           "TEMP2 Bias",IDC_STATIC,23,39,41,8
+    LTEXT           "C",IDC_STATIC,124,39,8,8
+    CONTROL         "Spin1",IDC_SPIN_BIAS1,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,112,15,9,12
+    CTEXT           "",IDC_TEMP_BIAS1,67,15,45,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "( TEMP1 Bias = TEMP1 Read - TEMP1 Adjust )",IDC_TIPS1,
+                    16,59,169,8
+    PUSHBUTTON      "Adjust",ID_ADJUST_TEMP1,137,15,40,12
+    PUSHBUTTON      "Adjust",ID_ADJUST_TEMP2,137,37,40,12
+    CONTROL         "Spin1",IDC_SPIN_BIAS2,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,112,37,9,12
+    CTEXT           "",IDC_TEMP_BIAS2,67,37,45,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "( TEMP2 Bias = TEMP2 Read - TEMP2 Adjust )",IDC_TIPS2,
+                    16,76,169,8
+END
+
+IDD_VERSION DIALOG DISCARDABLE  0, 0, 134, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Version Info"
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,52,44,13,WS_GROUP
+    RTEXT           "Software Ver:",IDC_STATIC,20,13,53,8
+    LTEXT           "Vx.x",IDC_SW_VER,77,13,37,8
+    RTEXT           "Hardware Ver:",IDC_STATIC,20,28,53,8
+    LTEXT           "Vx.x",IDC_HW_VER,77,28,37,8
+END
+
+IDD_VIEWBAR DIALOGEX 0, 0, 197, 486
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    RTEXT           "HR",IDC_STATIC,22,15,9,8
+    CTEXT           "",IDC_HR,34,10,60,17,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_TRANSPARENT
+    RTEXT           "ST(mv)",IDC_STATIC,6,44,25,8
+    CTEXT           "",IDC_ST,34,40,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "SPO2",IDC_STATIC,14,135,17,8
+    CTEXT           "",IDC_SPO2,34,130,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "PR",IDC_STATIC,118,135,9,8
+    CTEXT           "",IDC_PR,129,130,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "RR",IDC_STATIC,118,15,9,8
+    CTEXT           "",IDC_RESP,129,10,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "SYS",IDC_STATIC,18,74,13,8
+    CTEXT           "",IDC_SYS,34,70,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "DIA",IDC_STATIC,114,75,13,8
+    CTEXT           "",IDC_DIA,129,70,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "MEAN",IDC_STATIC,14,104,17,8
+    CTEXT           "",IDC_MEAN,34,100,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "CUFF",IDC_STATIC,110,105,17,8
+    CTEXT           "",IDC_CUFF,129,100,60,17,SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "ECG Status",IDC_STATIC,2,200,194,51
+    RTEXT           "Lead",IDC_STATIC,14,213,17,8
+    CTEXT           "",IDC_ECG_LEAD_STATE,34,209,60,17,SS_CENTERIMAGE | 
+                    WS_BORDER
+    RTEXT           "Filter",IDC_STATIC,6,234,25,8
+    CTEXT           "",IDC_ECG_MODE,34,230,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "Gain",IDC_STATIC,110,234,17,8
+    RTEXT           "Signal",IDC_STATIC,102,213,25,8
+    CTEXT           "",IDC_ECG_SIGNAL,129,209,60,17,SS_CENTERIMAGE | 
+                    WS_BORDER
+    GROUPBOX        "SPO2 Status",IDC_STATIC,2,340,194,31
+    GROUPBOX        "NIBP Status",IDC_STATIC,2,270,194,51,WS_GROUP
+    RTEXT           "Status",IDC_STATIC,6,354,25,8
+    CTEXT           "",IDC_SPO2_STATE,35,350,154,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    RTEXT           "Mode",IDC_STATIC,14,283,17,8
+    CTEXT           "",IDC_NIBP_MODE,35,279,154,16,SS_CENTERIMAGE | 
+                    WS_BORDER | NOT WS_GROUP
+    RTEXT           "Status",IDC_STATIC,6,304,25,8,NOT WS_GROUP
+    CTEXT           "",IDC_NIBP_STATE,35,300,154,16,SS_CENTERIMAGE | 
+                    WS_BORDER | NOT WS_GROUP
+    RTEXT           "TEMP1",IDC_STATIC,10,165,21,8
+    CTEXT           "",IDC_TEMP1,34,160,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "ARR",IDC_STATIC,114,45,13,8
+    CTEXT           "",IDC_ARR,129,40,60,17,SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "TEMP Status",IDC_STATIC,2,390,194,31
+    RTEXT           "Status",IDC_STATIC,6,405,25,8
+    CTEXT           "",IDC_TEMP_STATE,35,401,154,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "",IDC_ECG_GAIN,129,230,60,17,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "TEMP2",IDC_STATIC,106,164,21,8
+    CTEXT           "",IDC_TEMP2,129,160,60,17,SS_CENTERIMAGE | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\monitor.ico"
+IDR_MONITOTYPE          ICON    DISCARDABLE     "res\\monitorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ECG_SETUP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_LEAKAGE_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_NIBP_ADJUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_NIBP_SETUP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_STATIC_PRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+
+    IDD_TEMP_ADJUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_VERSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_VIEWBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 195
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 484
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    MENUITEM "COM",                         IDM_COM_SETUP
+    MENUITEM "ECG",                         IDM_ECG_SETUP
+    MENUITEM "NIBP",                        IDM_NIBP_SETUP
+    POPUP "ADJUST"
+    BEGIN
+        MENUITEM "Leakage Check",               IDM_LEAKAGE_TEST
+        MENUITEM "Static Pressure Calibrate",   IDM_STATIC_PRESS_ADJUST
+        MENUITEM "NIBP Bias Adjust",            IDM_NIBP_ADJUST
+        MENUITEM "TEMP Bias Adjust",            IDM_TEMP_ADJUST
+    END
+    MENUITEM "VERSION",                     IDM_GET_VERSION
+    POPUP "TOGGLE"
+    BEGIN
+        MENUITEM "Show ToolBar",                IDM_TOOLBAR
+        MENUITEM "Show SideBar",                IDM_VIEWBAR
+    END
+    POPUP "HELP"
+    BEGIN
+        MENUITEM "About",                       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMM_SETUP DLGINIT
+BEGIN
+    IDC_PARITYBIT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_PARITYBIT, 0x403, 4, 0
+0x644f, 0x0064, 
+    IDC_PARITYBIT, 0x403, 5, 0
+0x7645, 0x6e65, "\000" 
+    0
+END
+
+IDD_ECG_SETUP DLGINIT
+BEGIN
+    IDC_ECG_MODE, 0x403, 10, 0
+0x704f, 0x7265, 0x7461, 0x6f69, 0x006e, 
+    IDC_ECG_MODE, 0x403, 8, 0
+0x6f4d, 0x696e, 0x6f74, 0x0072, 
+    IDC_ECG_MODE, 0x403, 9, 0
+0x6944, 0x6761, 0x6f6e, 0x6573, "\000" 
+    IDC_ECG_CMD, 0x403, 8, 0
+0x654c, 0x6461, 0x5f33, 0x0049, 
+    IDC_ECG_CMD, 0x403, 9, 0
+0x654c, 0x6461, 0x5f33, 0x4949, "\000" 
+    IDC_ECG_CMD, 0x403, 10, 0
+0x654c, 0x6461, 0x5f33, 0x4949, 0x0049, 
+    IDC_ECG_CMD, 0x403, 6, 0
+0x654c, 0x6461, 0x0035, 
+    0
+END
+
+IDD_NIBP_SETUP DLGINIT
+BEGIN
+    IDC_MODE, 0x403, 6, 0
+0x6441, 0x6c75, 0x0074, 
+    IDC_MODE, 0x403, 6, 0
+0x6843, 0x6c69, 0x0064, 
+    IDC_MODE, 0x403, 8, 0
+0x654e, 0x6e6f, 0x7461, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "monitor\n\nMonito\n\n\nMonitor.Document\nMonito Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "monitor-HYS"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Show Program Info, Version, Copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_STR_1               "HYS Protocol Demo Program"
+    IDS_STR_2               "Serial Port Operation"
+    IDS_STR_3               "open failed, check serial port settings please!\n"
+    IDS_STR_4               "On"
+    IDS_STR_5               "Off"
+    IDS_STR_6               "Oper"
+    IDS_STR_7               "Moni"
+    IDS_STR_8               "Diag"
+    IDS_STR_9               "Weak"
+    IDS_STR_10              "ANALYSIS"
+    IDS_STR_11              "ASYSTOLE"
+    IDS_STR_12              "VFIB/VTAC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NIBP_START           "\nNIBP Start"
+    ID_NIBP_STOP            "\nNIBP Stop"
+    IDM_COM_SETUP           "COM Setup"
+    IDM_ECG_SETUP           "ECG Setup"
+    IDM_NIBP_SETUP          "NIBP Setup"
+    ID_ECG_START            "\nECG Start"
+    ID_ECG_STOP             "\nECG Stop"
+    ID_SPO2_START           "\nSPO2 Start"
+    ID_SPO2_STOP            "\nSPO2 Stop"
+    ID_TEMP_START           "\nTEMP Start"
+    ID_TEMP_STOP            "\nTEMP Stop"
+    ID_TXY_START            "\nTXY Start"
+    ID_TXY_STOP             "\nTXY Stop"
+    ID_FGN_START            "\nFGN Start"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_TOOLBAR             "Toggle Tool Bar status"
+    IDM_VIEWBAR             "Toggle Side Bar status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FGN_STOP             "\nFGN Stop"
+    ID_COM_START            "\nCOM Start"
+    ID_COM_STOP             "\nCOM Stop"
+    IDM_NIBP_ADJUST         "NIBP BIAS ADJUST"
+    IDM_TEMP_ADJUST         "TEMP BIAS ADJUST"
+    IDM_STATIC_PRESS_ADJUST "STATIC PRESS ADJUST"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LEAKAGE_TEST        "NIBP LEAKAGE TEST"
+    IDM_GET_VERSION         "\nCOM Stop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_13              "R ON T"
+    IDS_STR_14              ">3 PVCS"
+    IDS_STR_15              "2 PVCS"
+    IDS_STR_16              "1 PVC"
+    IDS_STR_17              "BIGERM"
+    IDS_STR_18              "TRIGERM"
+    IDS_STR_19              "TACHY"
+    IDS_STR_20              "BRADY"
+    IDS_STR_21              "MISSED"
+    IDS_STR_22              "Adult"
+    IDS_STR_23              "Child"
+    IDS_STR_24              "Neonate"
+    IDS_STR_25              "Test finished"
+    IDS_STR_26              "Testing..."
+    IDS_STR_27              "Test stopped"
+    IDS_STR_28              "Over pressure protected"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_29              "Cuff loose or unattached"
+    IDS_STR_30              "Test time out"
+    IDS_STR_31              "Test error"
+    IDS_STR_32              "Disturb found during test"
+    IDS_STR_33              "Result out of range"
+    IDS_STR_34              "Module initializing"
+    IDS_STR_35              "Module initialized"
+    IDS_STR_36              "Sensor off"
+    IDS_STR_37              "No finger insert"
+    IDS_STR_38              "Searching pulse signal"
+    IDS_STR_39              "Searching time out"
+    IDS_STR_40              "Probe1 off"
+    IDS_STR_41              "Probe2 off"
+    IDS_STR_42              "Probe1 off, Probe2 off"
+    IDS_STR_43              "Good"
+    IDS_STR_44              "Start"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_45              "Stop"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\monitor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
